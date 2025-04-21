@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>ADSO 299491</h1>
+    </header>
+
+    <section>
+        
+        <div id="columnas">
+        <select id="selectorEjercicios" onchange="mostrarEjercicio(this.value)">
+            <option value="" selected>Ejercicios del 1 al 10</option>
+            <option value="contenido">1. Calculadora</option>
+            <option value="contenido2">2. Mayor de 2</option>
+            <option value="contenido3">3. Mayor de 100</option>
+            <option value="contenido4">4. Valores ascendentes</option>
+            <option value="contenido5">5. Promedio</option>
+            <option value="contenido6">6. Calcular área</option>
+            <option value="contenido7">7. Par o impar</option>
+            <option value="contenido8">8. Caja negra</option>
+            <option value="contenido9">9. Ganado x empleado</option>
+            <option value="contenido10">10. Concesionario</option>
+        </select>
+
+        <select id="selectorEjercicios" onchange="mostrarEjercicio(this.value)">
+            <option value="">Ejercicios del 11 al 20</option>
+            <option value="contenido11">11. 200</option>
+            <option value="contenido12">12. Fibonacci</option>
+            <option value="contenido13">13. 30Primo</option>
+            <option value="contenido14">14. >Primo</option>
+            <option value="contenido15">15. Menu</option>
+            <option value="contenido16">16. Divisible</option>
+            <option value="contenido17">17. Primosra</option>
+            <option value="contenido18">18. Reloj</option>
+            <option value="contenido19">19. Tabla X</option>
+            <option value="contenido20">20. Anali</option>
+        </select>
+
+        <select id="selectorEjercicios" onchange="mostrarEjercicio(this.value)">
+            <option value="">Ejercicios del 21 al 30</option>
+            <option value="contenido21">21. Sumaeste</option>
+            <option value="contenido22">22. Examen</option>
+            <option value="contenido23">23. Trian</option>
+            <option value="contenido24">24. Area</option>
+            <option value="contenido25">25. Terreno</option>
+            <option value="contenido26">26. Areafigu</option>
+            <option value="contenido27">27. Leche</option>
+            <option value="contenido28">28. Distancia</option>
+            <option value="contenido29">29. Pulgadas</option>
+            <option value="contenido30">30. Conagua</option>
+        </select>
+
+        <select id="selectorEjercicios" onchange="mostrarEjercicio(this.value)" value="">Selecciona un ejercicio>
+            <option value="">Ejercicios del 31 al 40</option>
+            <option value="contenido31">31. Mayorque</option>
+            <option value="contenido32">32. Signo</option>
+            <option value="contenido33">33. Lapices</option>
+            <option value="contenido34">34. Harapiento</option>
+            <option value="contenido35">35. Pseudoci</option>
+            <option value="contenido36">36. Langosta</option>
+            <option value="contenido37">37. Vinicult</option>
+            <option value="contenido38">38. Escuela</option>
+            <option value="contenido39">39. Chimefon</option>
+            <option value="contenido40">40. Viajes</option>
+        </select>
+
+        <select id="selectorEjercicios" onchange="mostrarEjercicio(this.value)">
+            <option value="">Ejercicios del 41 al 50</option>
+            <option value="contenido41">41. Dr Lorenzo</option>
+            <option value="contenido42">42. Paquete</option>
+            <option value="contenido43">43. Pueblodes</option>
+            <option value="contenido44">44. SM</option>
+            <option value="contenido45">45. Menudo</option>
+            <option value="contenido46">46. Datado</option>
+            <option value="contenido47">47. 1N</option>
+            <option value="contenido48">48. HyM</option>
+            <option value="contenido49">49. For</option>
+            <option value="contenido50">50. Pares1yN</option>
+        </select>
+
+        <select id="selectorEjercicios" onchange="mostrarEjercicio(this.value)">
+            <option value="">Ejercicios del 51 al 60</option>
+            <option value="contenido51">51. 15Ventas</option>
+            <option value="contenido52">52. Mientras</option>
+            <option value="contenido53">53. EdadAlum</option>
+            <option value="contenido54">54. Estatura</option>
+            <option value="contenido55">55. Ahorro</option>
+            <option value="contenido56">56. Fibo2</option>
+            <option value="contenido57">57. Trabadia</option>
+            <option value="contenido58">58. AguasC</option>
+            <option value="contenido59">59. Tikitaka</option>
+            <option value="contenido60">60. Tecnovivir</option>
+        </select>
+
+        <select id="selectorEjercicios" onchange="mostrarEjercicio(this.value)">
+            <option value="">Ejercicios del 61 al 72</option>
+            <option value="contenido61">61. Cajaregis</option>
+            <option value="contenido62">62. 10Cant</option>
+            <option value="contenido63">63. Ncantidades</option>
+            <option value="contenido64">64. Diagrama</option>
+            <option value="contenido65">65. Vector</option>
+            <option value="contenido66">66. X</option>
+            <option value="contenido67">67. elemento</option>
+            <option value="contenido68">68. promed</option>
+            <option value="contenido69">69. 5x5</option>
+            <option value="contenido70">70. matriz</option>
+            <option value="contenido71">71. 3*3</option>
+            <option value="contenido72">72. Triqui</option>
+
+        </select>
+    </div>
+</section>
+
+        <div id="con">
+            <div id="titulo"></div>
+            <!-- Ejercicios -->
+            <div id="contenido" >
+                <div id="ejercicio1" class="ejercicio oculto">
+                    <div class="nombre">
+                        <div class="name">
+                            <input type="text" id="valor1" placeholder="Ingresa el primer valor">
+                            <input type="tex" id="valor2" placeholder="Ingresa el segundo valor">
+                        </div>
+                    </div>
+                    <div class="botones">
+                        <button onclick="realizarOperacion('+')">Sumar</button>
+                        <button onclick="realizarOperacion('-')">Restar</button>
+                        <button onclick="realizarOperacion('*')">Multiplicar</button>
+                        <button onclick="realizarOperacion('/')">Dividir</button>
+                    </div>
+                    <div class="resultado">
+                        <p id="resultado"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contenido2">
+                <!-- Ejercicio 2: Mayor de 2 -->
+                <div id="ejercicio2" class="ejercicio oculto">
+                    <form id="numForm" class="nombre">
+                        <div class="name">
+                            <input type="text" id="num1" required placeholder="Ingresa el primer número">
+                            <input type="text" id="num2" required placeholder="Ingresa el segundo número">
+                        </div>
+                        <div class="botones">
+                            <button type="submit">Comparar</button>
+                        </div>
+                    </form>
+                    <div class="resultado">
+                        <p id="result"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contenido3">
+                <!-- Ejercicio 3: Mayor de 100-->
+                <div id="ejercicio3" class="ejercicio oculto">
+                    <form id="nusForm" class="nombre">
+                        <div class="name">
+                            <input type="text" id="num3" required placeholder="Ingresa el primer número">
+                        </div>
+                        <div class="botones">
+                            <button type="submit">Comparar</button>
+                        </div>
+                    </form>
+                    <div class="resultado">
+                        <p id="resulta"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contenido4">
+                <!-- Ejercicio 4: Valores ascendentes-->
+                 <div id="ejercicio4" class="ejercicio oculto">
+                    <form id="con4" class="nombre">
+                        <div class="name">
+                        <input type="text" id="a" required placeholder="Ingresa el primer número">
+                        <input type="text" id="b" required placeholder="Ingresa el segundo número">
+                        <input type="text" id="c" required placeholder="Ingresa el tercer número">
+                        </div>
+                        <div class="botones">
+                            <button type="submit">Comparar</button>
+                        </div>
+                        <div class="resultado">
+                        <p id="resultado4"></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="contenido5">
+                <!-- Ejercicio 5: Promedio-->
+                <div id="ejercicio5" class="ejercicio oculto">
+                    <form id="formNotas">
+                        <label for="nota1">Nota 1:</label>
+                        <input type="number" id="nota1" min="0" max="5" step="0.1" required ><br><br>
+                
+                        <label for="nota2">Nota 2:</label>
+                        <input type="number" id="nota2" min="0" max="5" step="0.1" required><br><br>
+                
+                        <label for="nota3">Nota 3:</label>
+                        <input type="number" id="nota3" min="0" max="5" step="0.1" required><br><br>
+                        
+                        <div class="botones">
+                            <button type="submit">Calcular Promedio</button>
+                        </div>
+                    </form>
+                    <div class="resultado">
+                        <div id="resultado5"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contenido6">
+                <!-- Ejercicio 6: Calcular area-->
+                 <div id="ejercicio6" class="ejercicio oculto">
+                    <form id="formArea">
+                        <input type="number" id="base" required placeholder="Ingresa la base"><br><br>
+                        <input type="number" id="altura" required placeholder="Ingresa la altura"><br><br>
+                        <div class="botones"><button type="submit">Calcular Area</button></div>
+                    </form>
+                    <div class="resultado">
+                        <div id="resultado6"></div>
+                    </div>
+                 </div>  
+            </div>
+
+            <div id="contenido7">
+                <!-- Ejercicio 7: Par o impar-->
+                 <div id="ejercicio7" class="ejercicio oculto">
+                    <form id="formParImpar">
+                        <input type="number" id="num" required placeholder="Ingresa un numero"><br><br>
+                        <div class="botones"><button type="submit">Calcular</button></div>
+                    </form>
+                    <div class="resultado">
+                        <div id="resultado7"></div>
+                    </div>
+                 </div>  
+            </div>
+
+            <div id="contenido8">
+                <!-- Ejercicio 8: Caja negra-->
+                 <div id="ejercicio8" class="ejercicio oculto">
+                    <form id="formCajaNegra">
+                        <input type="text" id="color" required placeholder="Ingresa el color"><br><br>
+                        <input type="number" id="docena" required placeholder="Ingresa la docena"><br><br>
+                        <div class="botones"><button type="submit">Calcular</button></div>
+                    </form>
+                    <div class="resultado">
+                        <div id="resultado8"></div>
+                    </div>
+                 </div>  
+            </div>
+
+            <div id="contenido9">
+                <!-- Ejercicio 9: Ganado x empleado-->
+                 <div id="ejercicio9" class="ejercicio oculto">
+                    <form id="formGanado">
+                        <input type="number" id="productos" required min="0" max="100" placeholder="Ingresa la cantidad de productos"><br><br>
+                        <input type="number" id="ventas" required min="0" placeholder="Ingresa la cantidad de ventas"><br><br>
+                        <div class="botones"><button type="submit">Calcular</button></div>
+                    </form>
+                    <div class="resultado">
+                        <div id="resultado9"></div>
+                    </div>
+                 </div>  
+            </div>
+
+            <div id="contenido10">
+                <!-- Ejercicio 10: Consecionario-->
+                 <div id="ejercicio10" class="ejercicio oculto">
+                    <form id="carForm">
+                        <label>Color del coche:</label>
+                        <input type="text" id="color"><br>
+                        <label>Modelo del coche:</label>
+                        <input type="number" id="model"><br>
+                        <label>Precio del coche:</label>
+                        <input type="number" id="price"><br>
+                        <label>Marca del coche:</label>
+                        <input type="text" id="brand"><br>
+                        <button type="button" onclick="calculateDiscount()">Calcular</button>
+                    </form>
+                    <div class="resultado">
+                        <p id="resultado10"></p>
+                    </div>
+                 </div>  
+            </div>
+
+            <div id="contenido11">
+                <div id="ejercicio11" class="ejercicio oculto">
+                    <div class="resultado">
+                    <p id="sequence"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contenido12">
+                <div id="ejercicio12" class="ejercicio oculto">
+                    <input type="number" id="num3_12" placeholder="Número ≥ 10">
+                    <button onclick="ejercicio3_12()">Generar</button>
+                    <div class="resultado">
+                        <div id="result3_12"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contenido13">
+                <div id="ejercicio13" class="ejercicio oculto">
+                    <div class="resultado">
+                        <div id="result3_13"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contenido14">
+                <div id="ejercicio14" class="ejercicio oculto">
+                    <input type="number" id="num3_14" placeholder="Número > 10">
+                    <button onclick="ejercicio3_14()">Calcular</button>
+                    <div class="resultado"><div id="result3_14"></div></div>
+                </div>
+            </div>
+
+            <div id="contenido15">
+                <div id="ejercicio15" class="ejercicio oculto">
+                    <select id="opcion">
+                        <option value="1">J + K</option>
+                        <option value="2">J % K</option>
+                        <option value="3">J / K</option>
+                        <option value="4">J + K + 1</option>
+                        <option value="5">J * K * 1</option>
+                    </select>
+                    <input type="number" id="num1" placeholder="Número J">
+                    <input type="number" id="num2" placeholder="Número K">
+                    <input type="number" id="num3" placeholder="Número L">
+                    <button onclick="ejercicio3_15()">Calcular</button>
+                    <div class="resultado"><div id="result3_15"></div></div>
+                </div>
+            </div>
+
+            <div id="contenido16">
+                <div id="ejercicio16" class="ejercicio oculto">
+                    <input type="number" id="num3_16" placeholder="Número > 3">
+                    <button onclick="ejercicio3_16()">Verificar</button>
+                    <div class="resultado"><div id="result3_16"></div></div>
+                </div>
+            </div>
+
+            <div id="contenido17">
+                <div id="ejercicio17" class="ejercicio oculto">
+                    <input type="number" id="numA" placeholder="Número mayor">
+                    <input type="number" id="numB" placeholder="Número menor">
+                    <button onclick="ejercicio3_17()">Buscar</button>
+                    <div class="resultado"><div id="result3_17"></div></div>
+                </div>
+            </div>
+
+            <div id="contenido18">
+                <div id="ejercicio18" class="ejercicio oculto">
+                    <div id="result3_18"></div>
+                </div>
+            </div>
+
+            <div id="contenido19">
+                <div id="ejercicio19" class="ejercicio oculto">
+                    <input type="number" id="num3_19" placeholder="Ingrese un número">
+                    <button onclick="generarTabla()">Generar tabla</button>
+                    <div class="resultado"><div id="result3_19"></div></div>
+                </div>
+            </div>
+
+            <div id="contenido20">
+                <div id="ejercicio20" class="ejercicio oculto">
+                    <textarea id="numeros3_20" placeholder="Ingrese 50 números separados por comas" rows="4" cols="50"></textarea>
+                    <button onclick="analizarNumeros()">Analizar</button>
+                    <div class="resultado"><div id="result3_20"></div></div>
+                </div>
+            </div>
+
+            <div id="contenido21">
+                <div id="ejercicio21" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="number" id="num11" placeholder="Ingrese un número">
+                        <input type="number" id="num21" placeholder="Ingrese un número">
+                        <input type="number" id="num31" placeholder="Ingrese un número">
+                    </div>
+                    <button onclick="ejercicio3_21()">Calcular</button>
+                    <div class="resultado"><div id="result3_21"></div></div>
+                </div>
+            </div>
+
+            <div id="contenido22">
+                <div id="ejercicio22" class="ejercicio oculto">
+                <div class="name">
+                    <input type="number" id="calificacion1" placeholder="Ingrese un número">
+                    <input type="number" id="calificacion2" placeholder="Ingrese un número">
+                    <input type="number" id="calificacion3" placeholder="Ingrese un número">
+                    <input type="number" id="calificacion4" placeholder="Ingrese un número">
+                </div>
+                <button onclick="calcularPromedio()">Calcular</button>
+                
+                    <div class="resultado"> <div id="respuesta22"></div></div>
+                </div>
+            </div>
+
+            <div id="contenido23">
+                <div id="ejercicio23" class="ejercicio oculto">
+                    <form id="calcularPromedio">
+                        <input type="number" id="base2" required placeholder="Ingresa la base"><br><br>
+                        <input type="number" id="altura2" required placeholder="Ingresa la altura"><br><br>
+                        <div class="botones"><button type="submit">Calcular Area</button></div>
+                    </form>
+                    <div class="resultado"><div id="resultado23"></div></div>
+                </div>
+            </div>
+
+            <div id="contenido24">
+                <div id="ejercicio24" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="number" id="radio" placeholder="Ingrese un número">
+                    </div>
+                    <button onclick="calcularrea()">Calcular</button>
+                    <div class="resultado"> <div id="resultado24"></div> </div>
+                </div>
+            </div>
+            
+            <div id="contenido25">
+                <div id="ejercicio25" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="number" id="baseRectangulo" placeholder="Ingrese baseRectangulo">
+                        <input type="number" id="alturaRectangulo" placeholder="Ingrese alturaRectangulo">
+                        <input type="number" id="baseTriangulo" placeholder="Ingrese baseTriangulo">
+                        <input type="number" id="alturaTriangulo" placeholder="Ingrese alturaTriangulo">
+                    </div>
+                    <button onclick="calcularterreno()">Calcular</button>
+                    <div class="resultado"> <div id="resultado25"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido26">
+                <div id="ejercicio26" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="text" id="H" required placeholder="Ingrese un número">
+                        <input type="text" id="R" required placeholder="Ingrese un número">
+                    </div>
+                    <button onclick="ejercicio26()">Calcular</button>
+                    <div class="resultado"> <div id="resultado26"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido27">
+                <div id="ejercicio27" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="text" id="litros" placeholder="Ingrese un número">
+                        <input type="text" id="precioGalon" placeholder="Ingrese un número">
+                    </div>
+                    <button onclick="calcularPago()">Calcular</button>
+                    <div class="resultado"> <div id="resultado27"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido28">
+                <div id="ejercicio28" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="text" id="x1" placeholder="Ingrese un número">
+                        <input type="text" id="y1" placeholder="Ingrese un número">
+                        <input type="text" id="x2" placeholder="Ingrese un número">
+                        <input type="text" id="y2" placeholder="Ingrese un número">
+                    </div>
+                <button onclick="calcularDistancia()">Respuesta</button>
+                <div class="resultado"> <div id="resultado28"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido29">
+                <div id="ejercicio29" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="text" id="metros" placeholder="Ingrese un número">
+                    </div>
+                    <button onclick="calcularPulgadas()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado29"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido30">
+                <div id="ejercicio30" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="text" id="largo" placeholder="Ingrese largo">
+                        <input type="text" id="ancho" placeholder="Ingrese ancho">
+                        <input type="text" id="profundidad" placeholder="Ingrese profundidad">
+                        <input type="text" id="precioMetroCubico" placeholder="Ingrese precio Metro Cubico">
+                    </div>
+                    <button onclick="calcularConagua()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado30"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido31">
+                <div id="ejercicio31" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="text" id="valor11" placeholder="Ingrese un número">
+                        <input type="text" id="valor22" placeholder="Ingrese un número">
+                    </div>
+                    <button onclick="determinarMayor()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado31"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido32">
+                <div id="ejercicio32" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="text" id="numero" placeholder="Ingrese un número">
+                    </div>
+                    <button onclick="determinarSigno()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado32"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido33">
+                <div id="ejercicio33" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="text" id="cantidad" placeholder="Ingrese un número">
+                    </div>
+                    <button onclick="calcularLapices()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado33"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido34">
+                <div id="ejercicio34" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="text" id="precio" placeholder="Ingrese un número">
+                    </div>
+                    <button onclick="calcularPrecioFinal()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado34"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido35">
+                <div id="ejercicio35" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="text" id="cantidad1" placeholder="Ingrese un número">
+                        <input type="text" id="cantidad2" placeholder="Ingrese un número">
+                        <input type="text" id="cantidad3" placeholder="Ingrese un número">
+                    </div>
+                    <button onclick="determinarMayora()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado35"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido36">
+                <div id="ejercicio36" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="text" id="personas" placeholder="Ingrese un número de personas">
+                    </div>
+                    <button onclick="calcularLangosta()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado36"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido37">
+                <div id="ejercicio37" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="text" id="precioInicial" placeholder="Ingrese precioInicial">
+                        <input type="text" id="tipo" placeholder="Ingrese tipo A o B">
+                        <input type="text" id="kilos" placeholder="Ingrese kilos">
+                        <input type="text" id="tamano" placeholder="Ingrese tamano">
+                    </div>
+                    <button onclick="calcularVinicultura()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado37"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido38">
+                <div id="ejercicio38" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="text" id="alumnos" placeholder="Ingrese número de estudiantes">
+                    </div>
+                    <button onclick="calcularCostos()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado38"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido39">
+                <div id="ejercicio39" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="text" id="minutos" placeholder="Ingrese minutos">
+                        <input type="text" id="dia" placeholder="Ingrese dia (domingo, habil )">
+                        <input type="text" id="turno" placeholder="Ingrese turno (matutino, vespertino)">
+                    </div>
+                    <button onclick="Chimefon()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado39"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido40">
+                <div id="ejercicio40" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="text" id="tipoAutobus" placeholder="Ingrese tipo de bus (A, B, C)">
+                        <input type="text" id="kilometros" placeholder="Ingrese velocidad">
+                        <input type="text" id="personas" placeholder="Ingrese cantidad de personas">
+                    </div>
+                    <button onclick="calcularViaje()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado40"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido41">
+                <div id="ejercicio41" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="text" id="numeroCita" placeholder="Ingrese num cita">
+                    </div>
+                    <button onclick="calcularCostoCita()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado41"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido42">
+                <div id="ejercicio42" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="text" id="peso" placeholder="Ingrese peso">
+                        <input type="text" id="zona" placeholder="Ingrese zona (norte, centro, sur, europa, asia)">
+                    </div>
+                    <button onclick="calcularCostoPaquete()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado42"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido43">
+                <div id="ejercicio43" class="ejercicio oculto">
+                    <label for="limite">Límite actual de la tarjeta ($):</label>
+                    <input type="number" id="limite" placeholder="Ej: 1000000">
+
+                    <label for="tipo">Tipo de tarjeta:</label>
+                    <select id="tipo">
+                    <option value="1">Tipo 1</option>
+                    <option value="2">Tipo 2</option>
+                    <option value="3">Tipo 3</option>
+                    <option value="4">Otro tipo</option>
+                    </select>
+                    <button onclick="calcularNuevoLimite()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado43"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido44">
+                <div id="ejercicio44" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="text" id="montoCompra" placeholder="Ingrese montoCompra">
+                        <input type="text" id="sexo" placeholder="Ingrese sexo">
+                    </div>
+                    <button onclick="mostrarPremio()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado44"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido45">
+                    <div id="ejercicio45" class="ejercicio oculto">
+                        <div class="nombre">
+                            <label for="num1">Primer número:</label>
+                        <input type="number" id="num15" placeholder="Ej: 10">
+
+                        <label for="num2">Segundo número:</label>
+                        <input type="number" id="num26" placeholder="Ej: 5">
+                        </div>
+
+                        <label for="operacion">Seleccione una operación:</label>
+                        <select id="operacion">
+                        <option value="suma">Suma</option>
+                        <option value="resta">Resta</option>
+                        <option value="multiplicacion">Multiplicación</option>
+                        <option value="division">División</option>
+                        </select>
+
+                        <button onclick="calcular()">Calcular</button>
+                        <div class="resultado"><p id="resultado45"></p></div>
+                </div>
+            </div>
+
+            <div id="contenido46"> **********
+                <div id="ejercicio46" class="ejercicio">
+                  <label for="numero">Introduce un número:</label>
+                  <input type="number" id="numero" placeholder="Ej: 5">
+            
+                  <label for="opcion">Selecciona una operación:</label>
+                  <select id="opcion">
+                    <option value="primo">¿Es primo?</option>
+                    <option value="factorial">Calcular factorial</option>
+                    <option value="tabla">Tabla de multiplicar</option>
+                  </select>
+            
+                  <button onclick="realizarOperacion()">Ejecutar</button>
+            
+                  <div id="resultado46"></div>
+                </div>
+              </div>
+
+            <div id="contenido47">
+                <div id="ejercicio47" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="number" id="numero47" placeholder="Introduce un número N">
+                    </div>
+                        <button onclick="mostrarPrimos()">Mostrar primos</button>
+                    <div class="resultado"> <div id="resultado47"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido48">
+                <div id="ejercicio48" class="ejercicio oculto">
+                    <div class="name">
+                        <label for='n'>Ingrese el número de personas:</label> 
+                        <input type='number' id='n'> 
+                        <br><br>                
+                    </div>
+                    <button onclick="calcularPorcentajes()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado48"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido49">
+                <div id="ejercicio49" class="ejercicio oculto">
+                    <button onclick="capturarNumerosa()">Capturar Números</button>
+                    <div class="resultado"> <div id="resultado49"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido50">
+                <div id="ejercicio50" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="number" id="numero50" placeholder="Introduce un número N">
+                    </div>
+                    <button onclick="mostrarPares()">Mostrar pares</button>
+                    <div class="resultado"> <div id="resultado500"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido51">
+                <div id="ejercicio51" class="ejercicio oculto">
+                    <p>Introduce 15 valores de ventas separados por comas:</p>
+                    <textarea id="ventasInput" rows="3" placeholder="Ejemplo: 100,50,200,430,220,240,148,560,720,650,500,780,650,945,220"></textarea>
+                    <button onclick="procesarVentas()">Procesar Ventas</button>
+                    <div class="resultado"> <div id="resultado51"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido52">
+                <div id="ejercicio52" class="ejercicio oculto">
+                    <div class="name">
+
+                    </div>
+                    <button onclick="calcularSumas()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado52"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido53">
+                <div id="ejercicio53" class="ejercicio oculto">
+                    <div class="name">
+                        <label for="numAlumnos">Número de alumnos:</label>
+                        <input type="number" id="numAlumnos" min="1" placeholder="Ej: 5">
+                    </div>
+
+                        <button onclick="generarCampos()">Ingresar edades</button>
+        
+                        <div id="edadesInput"></div>
+                        <div id="resultado53"></div>
+                </div>
+            </div>
+
+            <div id="contenido54">
+                <div id="ejercicio54" class="ejercicio oculto">
+                    <button onclick="calcularEstaturaPromedio()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado54"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido55">
+                <div id="ejercicio55" class="ejercicio oculto">
+                    <button onclick="calcularAhorro()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado55"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido56">
+                <div id="ejercicio56" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="text" id="n3" placeholder="Ingrese un número">
+                    </div>
+                    <button onclick="generarFibonacci()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado56"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido57">
+                <div id="ejercicio57" class="ejercicio oculto">
+                    <button onclick="calcularSueldo()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado57"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido58">
+                <div id="ejercicio58" class="ejercicio oculto">
+                    <button onclick="calcularEncuentro()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado58"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido59">
+                <div id="ejercicio59" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="text" id="n45" placeholder="Ingrese un número">
+                    </div>
+                    <button onclick="analizarVentas()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado59"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido60">
+                <div id="ejercicio60" class="ejercicio oculto">
+                    <div class="name">
+
+                    </div>
+                    <button onclick="calcularNomina()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado60"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido61">***************
+                <div id="ejercicio61" class="ejercicio oculto">
+                    <div class="name">
+                        <input type="text" id="producto" placeholder="Nombre del producto">
+                        <input type="number" id="precio" placeholder="Precio del producto">
+                        <input type="number" id="cantidad" placeholder="Cantidad">
+                    </div>
+                    <button onclick="agregarProducto()">Agregar a la cuenta</button>
+                    <div id="resultado">Total a pagar: <div id="total2"></div></div>
+                </div>
+            </div>
+
+            <div id="contenido62">
+                <div id="ejercicio62" class="ejercicio oculto">
+                    <button onclick="calcularSuma2()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado62"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido63">
+                <div id="ejercicio63" class="ejercicio oculto">
+                    <label for="numCantidades">¿Cuántas cantidades deseas ingresar?</label>
+                    <input type="number" id="numCantidades" min="1" value="5">
+                    <button onclick="generarCampos63()">Aceptar</button>
+
+                    <div id="inputsNumeros"></div>
+                    <button id="btnAnalizar" onclick="analizarNumeros12()">Analizar</button>
+
+                    <div id="resultado63"></div>
+                </div>
+            </div>
+
+            <div id="contenido64">
+                <div id="ejercicio64" class="ejercicio oculto">
+                    
+                    <div id="inputs"></div>
+                    <button onclick="calcularSuma()">Calcular suma</button>
+                  
+                    <div id="resultado64"></div>
+                </div>
+            </div>
+
+            <div id="contenido65">
+                <div id="ejercicio65" class="ejercicio oculto">
+                    <label for="cantidad">¿Cuántos números vas a ingresar?</label>
+                        <input type="number" id="cantidad14" min="1">
+
+                        <button onclick="crearEntradas()">Ingresar Números</button>
+
+                        <div id="inputs2"></div>
+
+                        <div id="acciones">
+                            <button onclick="procesarDatos24()">Procesar</button>
+                        </div>
+
+                        <div id="resultado65"></div>
+                </div>
+            </div>
+
+            <div id="contenido66">
+                <div id="ejercicio66" class="ejercicio oculto">
+                    <button onclick="generarVector()">Generar Vector</button><br><br>
+
+                        <label for="valorBuscar">Ingrese el número que desea buscar:</label>
+                        <input type="number" id="valorBuscar">
+                        <button onclick="buscarNumero()">Buscar</button>
+
+                        <h3 id="resultadoBusqueda"></h3>
+                        <p id="vectorMostrado"></p>
+                </div>
+            </div>
+
+            <div id="contenido67">
+                <div id="ejercicio67" class="ejercicio oculto">
+                    <button onclick="invertirVector()">Generar e Invertir Vector</button>
+
+                    <h3>📦 Vector Original:</h3>
+                    <p id="original"></p>
+
+                    <h3>🔁 Vector Invertido:</h3>
+                    <p id="invertido"></p>
+                </div>
+            </div>
+
+            <div id="contenido68">
+                <div id="ejercicio68" class="ejercicio oculto">
+                    
+                    <label for="numero">Ingresa un número:</label>
+                        <input type="number" id="numero54" placeholder="Ej: 15">
+                        <button onclick="agregarNumero()">Agregar</button>
+
+                        <h3>Números ingresados:</h3>
+                        <p id="lista"></p>
+
+                        <h3 id="resultado68"></h3>
+                </div>
+            </div>
+
+            <div id="contenido69">
+                <div id="ejercicio69" class="ejercicio oculto">
+                    
+                    <p>Ingresa notas de 0.0 a 5.0. Solo se mostrarán las notas ≥ 3.5.</p>
+                    <div class="name">
+                    <div id="matriz"></div>
+                </div>
+                    <button onclick="procesarMatriz()">Ver notas aprobadas</button>
+
+                    <h3>✅ Notas aprobadas:</h3>
+                    <div id="resultado69"></div>
+                </div>
+            </div>
+
+            <div id="contenido70">
+                <div id="ejercicio70" class="ejercicio oculto">
+                    
+                    <button onclick="generarMatriza()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado70"></div> </div>
+                </div>
+            </div>
+
+            <div id="contenido71">
+                <div id="ejercicio71" class="ejercicio oculto">
+                    
+                    <button onclick="multiplicarMatricesas()">Respuesta</button>
+                    <div class="resultado"> <div id="resultado71"></div> </div>
+                </div>
+            </div>
+
+            <!-- Triqui -->
+            <div id="contenido72">
+                    <div id="triqui">
+                    </div>
+                </div>
+        </div>    
+    
+<footer>    
+    Desarrollado por Andres Rojas &copy; 2025 
+</footer>
+</body>
+
+<script src="/js/code.js"></script>
+<script src="/js/eje1.js"></script>
+<script src="/js/submenu.js"></script>
+
+</html>
